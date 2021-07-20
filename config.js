@@ -1,4 +1,3 @@
 module.exports = {
-    
-    'mongoUrl' : 'mongodb://localhost:27017/conFusion'
+    'mongoUrl' : 'mongodb://localhost:27017/firmcon'
 }
