@@ -38,9 +38,9 @@ router.get('/register', (req, res) => {
 });
 
 router.post('/login', passport.authenticate('local'), (req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
-  res.json({success: true, status: 'You are successfully logged in!'});
+  
+  console.log(req.user)
+  res.redirect('/dashboard');
 });
 
 router.get('/logout', (req, res) => {
@@ -55,5 +55,7 @@ router.get('/logout', (req, res) => {
      next(err);
    }
  });
+
+ 
 
 module.exports = router;
