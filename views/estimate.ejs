@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Bind SELECT Dropdown with JSON using JavaScript</title>
+</head>
+<body>
+    <form name="myform" id="myForm">
+        Country: <select name="state" id="countySel" size="1">
+        <option value="" selected="selected">Country</option>
+        </select>
+        <br>
+        <br>
+        State: <select name="countrya" id="stateSel" size="1">
+        <option value="" selected="selected">Province</option>
+        </select>
+        <br>
+        <br>
+        City: <select name="district" id="districtSel" size="1">
+        <option value="" selected="selected">City</option>
+        </select><br>
+        <form autocomplete="off" action="/action_page.php">
+          <div class="autocomplete" style="width:300px;">
+            <input id="myInput" type="text" name="myCountry" placeholder="Country">
+          </div>
+          <input type="submit">
+        </form>
+    </form>
+</body>
+<script defer src=/functions/location_selector.js></script>
