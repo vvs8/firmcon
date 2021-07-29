@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Bind SELECT Dropdown with JSON using JavaScript</title>
+    <link rel="stylesheet" href="stylesheets/estimate.css">
 </head>
 <body>
     <form name="myform" id="myForm">
@@ -14,15 +15,14 @@
         </select>
         <br>
         <br>
-        City: <select name="district" id="districtSel" size="1">
-        <option value="" selected="selected">City</option>
-        </select><br>
-        <form autocomplete="off" action="/action_page.php">
+        <div autocomplete="off" action="/action_page.php">
           <div class="autocomplete" style="width:300px;">
-            <input id="myInput" type="text" name="myCountry" placeholder="Country">
+            <input id="myInput" type="text" name="myCountry" placeholder="City">
           </div>
-          <input type="submit">
-        </form>
+        </div>
+        <input type="submit">
     </form>
+    
+
 </body>
 <script defer src=/functions/location_selector.js></script>
